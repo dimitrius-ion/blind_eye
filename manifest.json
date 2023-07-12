@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Blind_Eye",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "https://api-inference.huggingface.co/models/nlpconnect/vit-gpt2-image-captioning"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["index.js"]
+    }
+  ]
+}
